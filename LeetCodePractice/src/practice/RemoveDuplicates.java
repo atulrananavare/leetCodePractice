@@ -14,9 +14,9 @@ public class RemoveDuplicates {
 		
 		//removeDuplicates2(nums);
 		
-		hashSetDuplicate(nums);
+		//hashSetDuplicate(nums);
 		
-		
+		m1(nums);
 		
 	}
 
@@ -76,6 +76,29 @@ public class RemoveDuplicates {
 		System.out.println("size is: "+ set.size());
 		
 	}
+	
+	
+	public static int m1(int[] nums) {
+		 int j=0;
+			
+			
+	        if(nums.length==0) return 0;
+			
+			for(int i=1;i<nums.length;i++) {
+				if(nums[i]!=nums[j]) {
+	                j++;
+					nums[j]=nums[i];
+					System.out.println(nums[j]);
+				}
+				
+			}
+			
+			
+			
+			return j+1;
+
+	}
+	
 
 
 }
