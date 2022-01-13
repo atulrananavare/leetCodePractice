@@ -5,8 +5,9 @@ public class rotateArray {
 	public static void main(String[] args) {
 		rotateArray arr = new rotateArray();
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
-		arr.rotate(nums, 3);
-
+		arr.rotate2(nums, 3);
+		int r=3%7;
+		System.out.println("----------"+r);
 	}
 
 	// {1,2,3,4,5,6,7}
